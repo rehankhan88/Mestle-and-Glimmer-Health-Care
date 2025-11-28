@@ -49,18 +49,206 @@
 
       <nav class="nav-bar" id="mainNav" aria-label="Main navigation">
         <ul class="container nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Products</a></li>
-          <li><a href="#">Discounts & Offers</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="allproducts.html">All Products</a></li>
+          <li><a href="discounts&offers.html">Discounts & Offers</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- MAIN -->
     <main class="container main-content" id="main">
+      <section class="hero-wrapper" aria-label="Homepage hero">
+         <!-- HERO SECTION -->
+  
+    <div class="hero-slider" id="heroSlider" role="region" aria-roledescription="carousel" aria-label="Featured products">
+      <div class="slides" id="slides">
+        <!-- Slide 1 -->
+        <figure class="slide active" data-index="0" aria-hidden="false">
+          <img
+            src="https://via.placeholder.com/1600x800?text=Slide+1+Desktop"
+            srcset="https://via.placeholder.com/800x400?text=Slide+1+Tablet 800w, https://via.placeholder.com/480x300?text=Slide+1+Mobile 480w"
+            sizes="(min-width:1024px) 1200px, (min-width:768px) 900px, 480px"
+            alt="Healthy lifestyle — vitamins and supplements"
+            loading="lazy"
+          />
+          <figcaption class="slide-caption">
+            <h1>Trusted Nutrition For Families</h1>
+            <p>Quality supplements manufactured under GMP standards.</p>
+            <div class="cta">
+              <a href="#" class="btn-primary">Shop Now</a>
+              <a href="#" class="btn-ghost">Learn More</a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Slide 2 -->
+        <figure class="slide" data-index="1" aria-hidden="true">
+          <img src="https://via.placeholder.com/1600x800?text=Slide+2+Desktop" alt="Herbal wellness products" loading="lazy" />
+          <figcaption class="slide-caption">
+            <h1>Natural Herbal Remedies</h1>
+            <p>Formulated with natural extracts to support daily wellbeing.</p>
+            <div class="cta"><a href="#" class="btn-primary">Explore</a></div>
+          </figcaption>
+        </figure>
+
+        <!-- Slide 3 -->
+        <figure class="slide" data-index="2" aria-hidden="true">
+          <img src="https://via.placeholder.com/1600x800?text=Slide+3+Desktop" alt="Child care vitamins" loading="lazy" />
+          <figcaption class="slide-caption">
+            <h1>Children’s Health Range</h1>
+            <p>Tasty, safe and doctor-recommended formulations.</p>
+            <div class="cta"><a href="#" class="btn-primary">View Collection</a></div>
+          </figcaption>
+        </figure>
+
+        <!-- Slide 4 -->
+        <figure class="slide" data-index="3" aria-hidden="true">
+          <img src="https://via.placeholder.com/1600x800?text=Slide+4+Desktop" alt="Immunity booster pack" loading="lazy" />
+          <figcaption class="slide-caption">
+            <h1>Immunity Boosters</h1>
+            <p>Daily defense made easy — shop our immunity essentials.</p>
+            <div class="cta"><a href="#" class="btn-primary">Buy Now</a></div>
+          </figcaption>
+        </figure>
+
+        <!-- Slide 5 -->
+        <figure class="slide" data-index="4" aria-hidden="true">
+          <img src="https://via.placeholder.com/1600x800?text=Slide+5+Desktop" alt="Skin care supplements" loading="lazy" />
+          <figcaption class="slide-caption">
+            <h1>Glow From Inside</h1>
+            <p>Beauty supplements for healthy skin and hair.</p>
+            <div class="cta"><a href="#" class="btn-primary">See Products</a></div>
+          </figcaption>
+        </figure>
+
+        <!-- Slide 6 -->
+        <figure class="slide" data-index="5" aria-hidden="true">
+          <img src="https://via.placeholder.com/1600x800?text=Slide+6+Desktop" alt="Special offer banner" loading="lazy" />
+          <figcaption class="slide-caption">
+            <h1>Seasonal Offers</h1>
+            <p>Limited-time discounts across top categories.</p>
+            <div class="cta"><a href="#" class="btn-primary">Grab Offer</a></div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- controls -->
+      <button class="nav-arrow prev" id="prevBtn" aria-label="Previous slide" title="Previous">‹</button>
+      <button class="nav-arrow next" id="nextBtn" aria-label="Next slide" title="Next">›</button>
+
+      <!-- indicators -->
+      <div class="indicators" id="indicators" role="tablist" aria-label="Slide indicators">
+        <button class="dot active" data-slide="0" aria-label="Go to slide 1" aria-pressed="true"></button>
+        <button class="dot" data-slide="1" aria-label="Go to slide 2" aria-pressed="false"></button>
+        <button class="dot" data-slide="2" aria-label="Go to slide 3" aria-pressed="false"></button>
+        <button class="dot" data-slide="3" aria-label="Go to slide 4" aria-pressed="false"></button>
+        <button class="dot" data-slide="4" aria-label="Go to slide 5" aria-pressed="false"></button>
+        <button class="dot" data-slide="5" aria-label="Go to slide 6" aria-pressed="false"></button>
+      </div>
+    </div>
+      </section>
+      <!-- Shop by Category -->
+<section id="shop-categories" class="categories container" aria-label="Shop by category">
+  <h2 class="section-title">Shop by Category</h2>
+
+  <p class="section-sub">Find products by health category — fast. Click a category to view related products.</p>
+
+  <div class="category-grid" role="list">
+    <a href="/collections/bone-joint" class="cat-card" role="listitem" aria-label="Bone Joint & Muscle Pain">
+      <span class="cat-icon" aria-hidden="true"><i class="fa-solid fa-bone"></i></span>
+      <span class="cat-name">Bone Joint & Muscle Pain</span>
+    </a>
+
+    <a href="/collections/brain-nerve" class="cat-card" role="listitem" aria-label="Brain & Nerve Health">
+      <span class="cat-icon"><i class="fa-solid fa-brain"></i></span>
+      <span class="cat-name">Brain & Nerve Health</span>
+    </a>
+
+    <a href="/collections/diabetes-management" class="cat-card" role="listitem" aria-label="Diabetes Management">
+      <span class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+      <span class="cat-name">Diabetes Management</span>
+    </a>
+
+    <a href="/collections/energy-immune" class="cat-card" role="listitem" aria-label="Energy & Immune Booster">
+      <span class="cat-icon"><i class="fa-solid fa-bolt"></i></span>
+      <span class="cat-name">Energy & Immune Booster</span>
+    </a>
+
+    <a href="/collections/eye-care" class="cat-card" role="listitem" aria-label="Eye Care">
+      <span class="cat-icon"><i class="fa-solid fa-eye"></i></span>
+      <span class="cat-name">Eye Care</span>
+    </a>
+
+    <a href="/collections/general-health" class="cat-card" role="listitem" aria-label="General Health">
+      <span class="cat-icon"><i class="fa-solid fa-heart"></i></span>
+      <span class="cat-name">General Health</span>
+    </a>
+
+    <a href="/collections/kids-health" class="cat-card" role="listitem" aria-label="Kid's Health">
+      <span class="cat-icon"><i class="fa-solid fa-child"></i></span>
+      <span class="cat-name">Kid's Health</span>
+    </a>
+
+    <a href="/collections/mens-health" class="cat-card" role="listitem" aria-label="Men's Health">
+      <span class="cat-icon"><i class="fa-solid fa-mars"></i></span>
+      <span class="cat-name">Men's Health</span>
+    </a>
+
+    <a href="/collections/pregnancy-care" class="cat-card" role="listitem" aria-label="Pregnancy Care">
+      <span class="cat-icon"><i class="fa-solid fa-baby"></i></span>
+      <span class="cat-name">Pregnancy Care</span>
+    </a>
+
+    <a href="/collections/respiratory-care" class="cat-card" role="listitem" aria-label="Respiratory Care">
+      <span class="cat-icon"><i class="fa-solid fa-lungs"></i></span>
+      <span class="cat-name">Respiratory Care</span>
+    </a>
+
+    <a href="/collections/skin-hair-nail" class="cat-card" role="listitem" aria-label="Skin Hair & Nail Care">
+      <span class="cat-icon"><i class="fa-solid fa-spa"></i></span>
+      <span class="cat-name">Skin Hair & Nail Care</span>
+    </a>
+
+    <a href="/collections/womens-health" class="cat-card" role="listitem" aria-label="Women's Health">
+      <span class="cat-icon"><i class="fa-solid fa-venus"></i></span>
+      <span class="cat-name">Women's Health</span>
+    </a>
+  </div>
+</section>
+<!-- Top Products Section -->
+<section id="top-products" class="top-products container" aria-label="Top products">
+  <div class="section-head">
+    <h2>Top Products</h2>
+    <a class="view-all" href="/collections/top-products" aria-label="View all top products">View All</a>
+  </div>
+
+  <div class="products-grid" id="productsGrid" role="list">
+    <!-- Product cards injected by top-products.js -->
+  </div>
+</section>
+
+<!-- Quick View Modal (hidden) -->
+<div id="productQuickView" class="quickview-modal" aria-hidden="true" role="dialog" aria-modal="true" tabindex="-1">
+  <div class="quickview-content" role="document">
+    <button class="quickview-close" id="qvClose" aria-label="Close quick view">×</button>
+    <div class="qv-image"><img id="qvImg" src="img/p1.jpg" alt=""></div>
+    <div class="qv-info">
+      <h3 id="qvTitle"></h3>
+      <p id="qvDesc" class="qv-desc"></p>
+      <div class="qv-price"><span id="qvPrice"></span> <span id="qvOldPrice" class="old-price"></span></div>
+      <div class="qv-actions">
+        <button id="qvAdd" class="btn">Add to Cart</button>
+        <a id="qvView" class="btn btn-ghost" href="product.html">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <h2>Welcome to Mestle and Glimmer</h2>
       <p>Your health, our priority.</p>
       <!-- sample product area (optional) -->
@@ -92,12 +280,12 @@
         <div class="footer-column">
           <h3>Main Menu</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">Discounts & Offers</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="discounts&offers.html">Discounts & Offers</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 

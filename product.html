@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calcium + D3 500mg — Mestle & Glimmer</title>
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header (minimal - replace with your site header) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" class="logo">M<span>&</span>G</a>
+          <span class="tag">Health Care</span>
+        </div>
+        <nav class="top-nav">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+        </nav>
+        <div class="header-actions">
+          <div id="cartPreview" class="cart-preview" aria-live="polite">
+            <i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container product-page">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="products.html">Products</a>
+        <span>›</span>
+        <span class="current">Calcium + D3 500mg</span>
+      </nav>
+
+      <section class="product-top">
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="main-image">
+            <img id="mainImage" src="images/product1.jpg" alt="Calcium + D3 500mg">
+          </div>
+          <div class="thumbs" id="thumbs">
+            <button class="thumb active" data-src="images/product1.jpg" aria-label="View image 1">
+              <img src="images/product1-thumb.jpg" alt="">
+            </button>
+            <button class="thumb" data-src="images/product1-2.jpg" aria-label="View image 2">
+              <img src="images/product1-2-thumb.jpg" alt="">
+            </button>
+            <button class="thumb" data-src="images/product1-3.jpg" aria-label="View image 3">
+              <img src="images/product1-3-thumb.jpg" alt="">
+            </button>
+            <button class="thumb" data-src="images/product1-4.jpg" aria-label="View image 4">
+              <img src="images/product1-4-thumb.jpg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <h1 class="product-title">Calcium + D3 500mg</h1>
+
+          <div class="price-row">
+            <div class="price">Rs. <span id="priceValue">1,239</span></div>
+            <div class="old-price">Rs. 1,770</div>
+            <div class="badge">-30%</div>
+          </div>
+
+          <div class="sku-stock">
+            <div><strong>SKU:</strong> MG-CAL500</div>
+            <div class="stock in-stock">In stock</div>
+          </div>
+
+          <p class="short-desc">Essential calcium supplement with vitamin D3 to support bone strength and muscle function. GMP manufactured.</p>
+
+          <div class="product-actions">
+            <div class="qty">
+              <button id="qtyMinus" aria-label="Decrease quantity">−</button>
+              <input id="qtyInput" type="number" min="1" value="1" aria-label="Quantity">
+              <button id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+
+            <div class="action-buttons">
+              <button id="addToCart" class="btn btn-primary">Add to Cart</button>
+              <button id="buyNow" class="btn btn-ghost">Buy Now</button>
+            </div>
+          </div>
+
+          <ul class="product-features">
+            <li><i class="fa-solid fa-check"></i> GMP Certified</li>
+            <li><i class="fa-solid fa-check"></i> Manufactured in state-of-the-art facility</li>
+            <li><i class="fa-solid fa-check"></i> 100% satisfaction guarantee</li>
+          </ul>
+
+          <div class="share">
+            <span>Share:</span>
+            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabs: Description/Ingredients/Directions/Reviews -->
+      <section class="product-tabs">
+        <div class="tabs" role="tablist" aria-label="Product tabs">
+          <button class="tab active" data-tab="description" role="tab" aria-selected="true">Description</button>
+          <button class="tab" data-tab="ingredients" role="tab" aria-selected="false">Ingredients</button>
+          <button class="tab" data-tab="directions" role="tab" aria-selected="false">Directions</button>
+          <button class="tab" data-tab="reviews" role="tab" aria-selected="false">Reviews</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="panel active" id="description" role="tabpanel">
+            <h3>Product Description</h3>
+            <p>This Calcium + D3 supplement provides 500mg elemental calcium per tablet with Vitamin D3 to enhance absorption. Ideal for adults looking to support bone density, muscle function and overall bone health. Manufactured under strict GMP standards.</p>
+            <p><strong>Benefits:</strong> Supports bone strength, aids muscle function, helps prevent deficiency.</p>
+          </div>
+
+          <div class="panel" id="ingredients" role="tabpanel" aria-hidden="true">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>Calcium Carbonate — 500 mg</li>
+              <li>Vitamin D3 (Cholecalciferol) — 400 IU</li>
+              <li>Microcrystalline cellulose, magnesium stearate, silicon dioxide</li>
+            </ul>
+          </div>
+
+          <div class="panel" id="directions" role="tabpanel" aria-hidden="true">
+            <h3>Directions</h3>
+            <p>Adults: Take one tablet daily after meal or as directed by your healthcare professional. Do not exceed recommended dose.</p>
+          </div>
+
+          <div class="panel" id="reviews" role="tabpanel" aria-hidden="true">
+            <h3>Customer Reviews</h3>
+            <div class="review">
+              <strong>Ali R.</strong>
+              <div class="rating">★★★★☆</div>
+              <p>Good quality supplement, noticed improvement in joint pain after a month.</p>
+            </div>
+            <div class="review">
+              <strong>Sana M.</strong>
+              <div class="rating">★★★★★</div>
+              <p>My doctor recommended these — very satisfied.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Products (Customers also bought) -->
+      <section class="recommended">
+        <div class="section-head">
+          <h2>Customers Also Bought</h2>
+          <a href="products.html" class="view-all">View All</a>
+        </div>
+
+        <div class="recommend-slider" id="recommendSlider">
+          <button class="rec-arrow left" id="recPrev" aria-label="Previous recommendations">‹</button>
+
+          <div class="rec-track" id="recTrack" tabindex="0" aria-label="Recommended products">
+            <!-- cards generated by JS -->
+          </div>
+
+          <button class="rec-arrow right" id="recNext" aria-label="Next recommendations">›</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Minimal footer (replace with your full footer) -->
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Mestle & Glimmer Health Care. All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script src="product.js"></script>
+</body>
+</html>

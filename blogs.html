@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mestle & Glimmer Health Care</title>
+
+  <!-- Styles & icons -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="top-bar container">
+        <div class="logo" aria-label="M & G Health Care">
+          <h1>M<span>&</span>G</h1>
+          <p>HEALTH CARE</p>
+        </div>
+
+        <div class="search-container">
+          <label for="site-search" class="visually-hidden">Search the store</label>
+          <input id="site-search" type="text" placeholder="Search the store" />
+          <button type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="right-info">
+          <div class="need-help">
+            <span>Need Help?</span>
+            <a href="tel:+923100000202" class="phone-number">0310-0000202</a>
+          </div>
+
+          <div class="cart-icon" id="cartBtn" aria-live="polite" role="button" tabindex="0">
+            <div class="cart-wrapper" aria-hidden="true">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <span class="cart-label">Cart</span>
+          </div>
+
+          <!-- mobile hamburger -->
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav-bar" id="mainNav" aria-label="Main navigation">
+        <ul class="container nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="allproducts.html">All Products</a></li>
+          <li><a href="discounts&offers.html">Discounts & Offers</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container main-content" id="main">
+      <h2>Welcome to Mestle and Glimmer</h2>
+      <p>Blogs</p>
+      
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="container footer-grid">
+        <div class="footer-column footer-info">
+          <div class="logo logo-dark" aria-hidden="true">
+            <h1>M<span>&</span>G</h1>
+            <p>HEALTH CARE</p>
+          </div>
+          <p class="gmp-info">1st State of the Art Plant. Compliant with International GMP Standards.</p>
+          <div class="contact-details">
+            <p><strong>Call:</strong> <a href="tel:+923100000202">+92 310 0000202</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@mghealthcare.com">info@mghealthcare.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Main Menu</h3>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="discounts&offers.html">Discounts & Offers</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Services</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Order Tracking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-follow-us">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="newsletter-signup">
+            <h4>Newsletter Sign Up</h4>
+            <p>Receive the latest updates about products and promotions.</p>
+            <form id="newsletterForm">
+              <input type="email" placeholder="enter your email address" required />
+              <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <small>© <span id="year"></span> Mestle & Glimmer Health Care. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="whatsapp-float" id="whatsappBtn" aria-label="Open WhatsApp chat" role="button" tabindex="0">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- WhatsApp Modal (hidden by default) -->
+    <div id="whatsappModal" class="whatsapp-modal-overlay" aria-hidden="true" role="dialog" aria-label="WhatsApp chat" style="display:none;">
+      <div class="whatsapp-modal">
+        <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+        <h3>Chat on WhatsApp</h3>
+        <p>We will open WhatsApp in a new tab to start the conversation.</p>
+        <div class="modal-actions">
+          <button id="openWhatsApp" class="btn">Open WhatsApp</button>
+          <button id="cancelModal" class="btn btn-ghost">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
